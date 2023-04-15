@@ -14,8 +14,11 @@
     out this branch and integrate the remote changes hint: (e.g. 'git pull ...')
     before pushing again. hint: See the 'Note about fast-forwards' in 'git push
     --help' for details.） 这时只需要拉取远程分支合并到当前分支，再次推送即可
-    git pull origin main
-    git push origin master3:main
-    即可
+    git pull origin main git push origin master3:main 即可
+    只要有更改，就把更改添加到暂存区，然后使用commit语句将更改添加到本地仓库
+    接着使用，接着查看与远程仓库是否有连接（git remote
+    -v），若有连接，则可以直接推送，此时
+    如果推送失败，说明远程仓库分支有变动没有和本地同步，则需要先拉取远程分支合并到本地分支，然后再推送即可
+    若没有连接，则需要先与远程仓库连接，连接好之后直接推送即可。
   </body>
 </html>
